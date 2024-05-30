@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, ScrollView, StyleSheet, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { Ionicons } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
 
 const Importancia = () => {
   const navigation = useNavigation();
@@ -11,7 +11,7 @@ const Importancia = () => {
     navigation.setOptions({
       headerLeft: () => (
         <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
-          <Ionicons name="menu" size={24} color="white" style={{ marginLeft: 15 }} />
+          <Entypo name="menu" size={24} color="white" style={{ marginLeft: 15 }} />
         </TouchableOpacity>
       ),
     });
@@ -22,10 +22,10 @@ const Importancia = () => {
       <Image
         source={require('../assets/Fundo.png')}
         style={StyleSheet.absoluteFillObject}
-      />      
+      />
       <Text style={styles.titulo}>WinkOcean</Text>
       <Text style={styles.subtitulo}>Mostrando a importância dos Oceanos</Text>
-      <Text style={styles.text}>
+      <Text style={{textAlign: 'center', color: '#fff', fontSize: 16, marginBottom: 15, lineHeight: 24, marginLeft: 10, marginRight: 10}}>
         Os oceanos desempenham um papel vital na manutenção da vida na Terra, funcionando uma ampla gama de processos ambientais e biológicos que são essenciais para a sobrevivência de inúmeras formas de vida. Entre suas contribuições mais significativas, destacam-se a produção de oxigênio, a regulação do clima e a sustento de milhões de espécies.
       </Text>
       <Text style={styles.sectiontitulo}>Produção de Oxigênio</Text>
@@ -74,6 +74,8 @@ const styles = StyleSheet.create({
     color: '#fff',
     marginBottom: 15,
     lineHeight: 24,
+    marginRight: 20,
+    textAlign: 'justify'
   },
   sectiontitulo: {
     marginLeft: 20,
@@ -83,12 +85,6 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     marginTop: 20,
   },
-  Image:{
-    flex: 1,
-    resizeMode: 'cover',
-    justifyContent: 'center',
-    opacity: 0.8,
-  }
 });
 
 export default Importancia;
