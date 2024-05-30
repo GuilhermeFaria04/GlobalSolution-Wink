@@ -1,7 +1,6 @@
 import React from 'react';
-import { Text, ScrollView, StyleSheet, Image } from 'react-native';
+import { Text, ScrollView, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 import { Entypo } from '@expo/vector-icons';
 
 const Ameaca = () => {
@@ -16,6 +15,10 @@ const Ameaca = () => {
             ),
         });
     }, [navigation]);
+
+    const handleNavigateToForm = () => {
+        navigation.navigate('Formulario para Denuncia');
+    };
 
     return (
         <ScrollView style={styles.container}>
@@ -47,6 +50,9 @@ const Ameaca = () => {
             <Text style={styles.text}>
                 A destruição de habitats marinhos, como recifes de corais e manguezais, tem um impacto devastador na biodiversidade oceânica. Essas áreas servem de berçário para muitas espécies marinhas e sua destruição reduz a capacidade de suporte dos oceanos. A urbanização costeira, a poluição e a mudança climática são algumas das principais causas da destruição de habitats. É crucial adotar práticas de conservação para proteger esses ecossistemas vitais.
             </Text>
+            <TouchableOpacity onPress={handleNavigateToForm} style={styles.button}>
+                <Text style={styles.buttonText}>Clique aqui para denunciar ameaças aos oceanos</Text>
+            </TouchableOpacity>
         </ScrollView>
     );
 }
@@ -92,6 +98,22 @@ const styles = StyleSheet.create({
         height: 225,
         marginBottom: 15,
         marginLeft: 20,
+    },
+    button: {
+        backgroundColor: '#0043EF',
+        padding: 15,
+        marginLeft: 15,
+        marginRight: 15,
+        marginBottom: 20,
+        borderRadius: 8,
+        marginTop: 20,
+    },
+    buttonText: {
+        color: '#fff',
+        fontSize: 16,
+        textAlign: 'center',
+        display: 'flex',
+        justifyContent: 'center'
     },
 });
 
