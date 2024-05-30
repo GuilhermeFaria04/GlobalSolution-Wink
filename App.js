@@ -8,6 +8,7 @@ import Ameaca from './Pages/Ameaca';
 import { Entypo } from '@expo/vector-icons';
 import Beneficios from './Pages/Beneficios';
 import Reducao from './Pages/Reducao';
+import Denuncia from './Pages/Denuncia';
 
 const Drawer = createDrawerNavigator();
 
@@ -35,6 +36,7 @@ const App = () => {
         <Drawer.Screen name="Ameaça aos Oceanos" component={Ameaca} options={{ title: 'Ameaça aos Oceanos' }}/>
         <Drawer.Screen name="Benefícios das Práticas" component={Beneficios} options={{ title: 'Benefícios das Práticas Sustentaveis' }}/>
         <Drawer.Screen name="Redução do Plastico" component={Reducao} options={{ title: 'Redução do Plastico' }}/>
+        <Drawer.Screen name="Formulario para Denuncia" component={Denuncia} options={{ title: 'Formulario para Denuncia' }}/>
       </Drawer.Navigator>
     </NavigationContainer>
   );
