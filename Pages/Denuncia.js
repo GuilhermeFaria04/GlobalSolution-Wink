@@ -3,6 +3,7 @@ import { Text, View, TextInput, StyleSheet, Button, Image, Alert, TouchableOpaci
 import { useState } from 'react';
 import { ScrollView } from 'react-native-gesture-handler';
 import DateTimePicker from '@react-native-community/datetimepicker';
+import axios from 'axios';
 
 const Denuncia = ({ navigation }) => {
     const [nome, setNome] = useState("");
@@ -38,6 +39,13 @@ const Denuncia = ({ navigation }) => {
                 {
                     text: "Confirmar",
                     onPress: () => {
+                        const URL = 'http://localhost:8080/denuncia'
+                        const body = {nome, email, pais, cidade, estado, latitude, longitude, tipo, data, descricao}
+                        try {
+                            axios.post(URL, body)
+                        } catch (error) {
+                            console.log(error)
+                        }
                         console.log("Denúncia enviada");
                         Alert.alert(
                             "Enviada",
