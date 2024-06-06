@@ -18,20 +18,20 @@
 
 
 ## Estrutura da Página Web
-# 1.Seção Informativa
+### 1.Seção Informativa
 
 - Importância dos Oceanos: Explicação sobre como os oceanos afetam a vida na Terra, incluindo sua contribuição para a produção de oxigênio, regulação do clima e sustento de milhões de espécies.
 - Ameaças aos Oceanos: Informações sobre as principais ameaças aos oceanos, como poluição, aquecimento global, pesca predatória e destruição de habitats.
 - Benefícios de Práticas Sustentáveis: Dicas sobre como os indivíduos podem contribuir para a saúde dos oceanos, como redução de plásticos, consumo consciente de frutos do mar e apoio a políticas ambientais.
 
 
-# 2.Seção de Dicas Sustentáveis
+### 2.Seção de Dicas Sustentáveis
 - Redução de Plásticos: Orientações sobre a redução do uso de plásticos descartáveis e alternativas sustentáveis.
 - Consumo Consciente: Informações sobre a escolha de produtos do mar que não prejudicam o ecossistema marinho.
 - Participação em Ações Locais: Como se envolver em ações e projetos de conservação marinha locais e globais.
 
 
-# 3.Canal de Denúncias
+### 3.Canal de Denúncias
 - Formulário de Denúncia: Área onde os usuários podem relatar atividades que prejudicam os oceanos, como derramamento de óleo, descarte de lixo no mar e danos causados por turistas.
 - Encaminhamento das Denúncias: As denúncias serão verificadas e encaminhadas para os órgãos competentes para investigação e ação.
 
